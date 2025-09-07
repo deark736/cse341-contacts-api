@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/deark736/cse341-contacts-api#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongodb": "^6.19.0"
   }
 }
