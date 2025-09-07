@@ -1,0 +1,19 @@
+{
+  "name": "cse341-contacts-api",
+  "version": "1.0.0",
+  "description": "Contacts API for CSE 341 project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deark736/cse341-contacts-api.git"
+  },
+  "author": "Ken Ho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deark736/cse341-contacts-api/issues"
+  },
+  "homepage": "https://github.com/deark736/cse341-contacts-api#readme"
+}
