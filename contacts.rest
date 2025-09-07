@@ -1,0 +1,8 @@
+### Get all contacts (deployed API)
+GET https://cse341-contacts-api-d974.onrender.com/contacts
+Content-Type: application/json
+
+
+### Get a single contact by ID (replace with a real _id)
+GET https://cse341-contacts-api-d974.onrender.com/contacts/68bde50ba8a1379c2572dc60
+Content-Type: application/json
