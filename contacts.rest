@@ -1,8 +1,53 @@
-### Get all contacts (deployed API)
-GET https://cse341-contacts-api-d974.onrender.com/contacts
+@baseUrl = https://cse341-contacts-api-d974.onrender.com
+# For local testing, toggle the next line and comment the deployed one:
+# @baseUrl = http://localhost:3000
+
+### Get all contacts
+GET {{baseUrl}}/contacts
 Content-Type: application/json
 
+###
 
-### Get a single contact by ID (replace with a real _id)
-GET https://cse341-contacts-api-d974.onrender.com/contacts/68bde50ba8a1379c2572dc60
+### Get single contact (valid id) – replace after creating
+@contactId = 000000000000000000000000
+GET {{baseUrl}}/contacts/{{contactId}}
 Content-Type: application/json
+
+###
+
+### Invalid id format (should return 400 or 404 depending on your handler)
+GET {{baseUrl}}/contacts/notavalidid
+Content-Type: application/json
+
+###
+
+### Create contact (POST) – copy the returned id into @contactId above
+POST {{baseUrl}}/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Ada",
+  "lastName": "Lovelace",
+  "email": "ada@example.com",
+  "favoriteColor": "Teal",
+  "birthday": "1815-12-10"
+}
+
+###
+
+### Update contact (PUT) – requires all fields per assignment
+PUT {{baseUrl}}/contacts/{{contactId}}
+Content-Type: application/json
+
+{
+  "firstName": "Ada",
+  "lastName": "Lovelace",
+  "email": "ada.l@example.com",
+  "favoriteColor": "Purple",
+  "birthday": "1815-12-10"
+}
+
+###
+
+### Delete contact (DELETE)
+DELETE {{baseUrl}}/contacts/{{contactId}}
