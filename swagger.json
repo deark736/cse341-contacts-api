@@ -1,14 +1,14 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "1.0.0",
-    "title": "REST API",
-    "description": ""
+    "title": "CSE 341 Contacts API",
+    "description": "Auto-generated Swagger documentation for Contacts API",
+    "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse341-contacts-api-d974.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
